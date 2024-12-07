@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baboghlian Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for enhanced styling */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            background-image: url('hero-image.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #b29c6b; /* Gold color */
+            color: white;
+            font-size: 1.2em;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #9e7b44; /* Darker gold on hover */
+        }
+
+        /* Product Categories */
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 40px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .categories .category {
+            width: 25%;
+            position: relative;
+        }
+
+        .categories .category img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .categories .category img:hover {
+            transform: scale(1.1);
+        }
+
+        .categories .category a {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Featured Products Section */
+        .featured-products {
+            padding: 60px 40px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .featured-products h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .featured-products .product {
+            display: inline-block;
+            width: 30%;
+            margin: 0 10px 40px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .featured-products .product img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .featured-products .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .featured-products .product p {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #b29c6b;
+            margin-bottom: 10px;
+        }
+
+        .featured-products .product a {
+            font-size: 1em;
+            color: #9e7b44;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .featured-products .product a:hover {
+            color: #b29c6b;
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            background-color: #b29c6b;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            font-size: 1.1em;
+            width: 60%;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            background-color: #9e7b44;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .newsletter button:hover {
+            background-color: #b29c6b;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        footer .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-media {
+            margin-top: 20px;
+        }
+
+        footer .social-media a {
+            color: #b29c6b;
+            margin: 0 10px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        footer .social-media a:hover {
+            color: #9e7b44;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo-placeholder.png" alt="Baboghlian Jewelry">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="cta">
+            <h1>Discover Your Perfect Jewelry</h1>
+            <button onclick="window.location.href='shop.html'">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <div class="category">
+            <img src="category-necklaces.jpg" alt="Necklaces">
+            <a href="shop.html">Necklaces</a>
+        </div>
+        <div class="category">
+            <img src="category-earrings.jpg" alt="Earrings">
+            <a href="shop.html">Earrings</a>
+        </div>
+        <div class="category">
+            <img src="category-rings.jpg" alt="Rings">
+            <a href="shop.html">Rings</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="product1.jpg" alt="Gold Necklace">
+            <p>Gold Necklace</p>
+            <a href="#">View Details</a>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Diamond Earrings">
+            <p>Diamond Earrings</p>
+            <a href="#">View Details</a>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Silver Ring">
+            <p>Silver Ring</p>
+            <a href="#">View Details</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Stay Updated!</h2>
+        <p>Subscribe to our newsletter to receive the latest offers and jewelry collections.</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Email: info@baboghlianjewelry.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
