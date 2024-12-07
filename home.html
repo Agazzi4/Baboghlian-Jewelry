@@ -6,11 +6,18 @@
     <title>Baboghlian Jewelry</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Additional CSS for enhanced styling */
-        body {
-            font-family: 'Arial', sans-serif;
+        /* Banner Section */
+        .banner {
+            background-color: #b29c6b; /* Gold color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        
+
         /* Hero Section */
         .hero {
             position: relative;
@@ -48,154 +55,7 @@
             background-color: #9e7b44; /* Darker gold on hover */
         }
 
-        /* Product Categories */
-        .categories {
-            display: flex;
-            justify-content: space-around;
-            padding: 60px 40px;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-
-        .categories .category {
-            width: 25%;
-            position: relative;
-        }
-
-        .categories .category img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .categories .category img:hover {
-            transform: scale(1.1);
-        }
-
-        .categories .category a {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #fff;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        /* Featured Products Section */
-        .featured-products {
-            padding: 60px 40px;
-            background-color: #ffffff;
-            text-align: center;
-        }
-
-        .featured-products h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-
-        .featured-products .product {
-            display: inline-block;
-            width: 30%;
-            margin: 0 10px 40px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .featured-products .product img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .featured-products .product:hover {
-            transform: translateY(-10px);
-        }
-
-        .featured-products .product p {
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #b29c6b;
-            margin-bottom: 10px;
-        }
-
-        .featured-products .product a {
-            font-size: 1em;
-            color: #9e7b44;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-
-        .featured-products .product a:hover {
-            color: #b29c6b;
-        }
-
-        /* Newsletter Section */
-        .newsletter {
-            background-color: #b29c6b;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-
-        .newsletter input[type="email"] {
-            padding: 10px;
-            font-size: 1.1em;
-            width: 60%;
-            margin-right: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .newsletter button {
-            background-color: #9e7b44;
-            color: white;
-            padding: 12px 20px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .newsletter button:hover {
-            background-color: #b29c6b;
-        }
-
-        /* Footer */
-        footer {
-            padding: 40px 20px;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-
-        footer .contact-info p {
-            margin-bottom: 10px;
-        }
-
-        footer .social-media {
-            margin-top: 20px;
-        }
-
-        footer .social-media a {
-            color: #b29c6b;
-            margin: 0 10px;
-            font-size: 1.2em;
-            transition: color 0.3s;
-        }
-
-        footer .social-media a:hover {
-            color: #9e7b44;
-        }
+        /* Rest of your styles... */
     </style>
 </head>
 <body>
@@ -213,6 +73,11 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <p>Holiday Sale! 20% Off All Jewelry - Limited Time Offer!</p>
+    </section>
 
     <!-- Hero Section -->
     <section class="hero">
